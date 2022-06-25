@@ -79,11 +79,27 @@
 		1CC578762867391A00AD51BB /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				1CC5788228674F7600AD51BB /* Public Endpoint */,
+				1CC5788128674F6600AD51BB /* Base */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		1CC5788128674F6600AD51BB /* Base */ = {
+			isa = PBXGroup;
+			children = (
 				1CC5787A28673A0900AD51BB /* BaseService.swift */,
 				1CC5787C28673A4B00AD51BB /* BaseURLRequest.swift */,
 				1CC5787E28673A6B00AD51BB /* Encodable+extensions.swift */,
 			);
-			path = Network;
+			path = Base;
+			sourceTree = "<group>";
+		};
+		1CC5788228674F7600AD51BB /* Public Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Public Endpoint";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
