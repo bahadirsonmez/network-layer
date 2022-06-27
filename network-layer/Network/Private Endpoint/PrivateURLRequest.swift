@@ -10,7 +10,6 @@ import Foundation
 class PrivateURLRequest: BaseURLRequest {
     override init() {
         super.init()
-        self.endpoint = "/private"
-        self.isPrivateEndpoint = true
+        self.endpointType = .privateType
     }
 }

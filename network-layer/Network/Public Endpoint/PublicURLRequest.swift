@@ -10,6 +10,6 @@ import Foundation
 class PublicURLRequest: BaseURLRequest {
     override init() {
         super.init()
-        self.endpoint = "/public"
+        self.endpointType = .publicType
     }
 }
