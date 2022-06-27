@@ -10,15 +10,32 @@ import Foundation
 
 class BaseURLRequest: URLRequestConvertible {
     
+    enum EndpointType {
+        case privateType
+        case publicType
+        
+        var endpointPath: String {
+            switch self {
+            case .privateType:
+                return "/private"
+            case .publicType:
+                return "/public"
+            }
+        }
+        
+        var isPrivate: Bool {
+            self == .privateType
+        }
+    }
+    
     private let baseURL: String = ""
-    var endpoint: String = ""
+    var endpointType: EndpointType = .publicType
     var path: String = ""
     var method: HTTPMethod = .get
-    var isPrivateEndpoint: Bool = false
     var parameters: Codable?
         
     func asURLRequest() throws -> URLRequest {
-        let endpoint = baseURL + endpoint + path
+        let endpoint = baseURL + endpointType.endpointPath + path
         guard let url = URL(string: endpoint)
         else {
             throw AFError.invalidURL(url: endpoint)
@@ -27,7 +44,7 @@ class BaseURLRequest: URLRequestConvertible {
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = method.rawValue
         urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        if isPrivateEndpoint {
+        if endpointType.isPrivate {
             urlRequest.setValue("Bearer Token {Token}", forHTTPHeaderField: "Authorization")
         }
 
