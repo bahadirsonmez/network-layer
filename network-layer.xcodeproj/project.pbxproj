@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C07BBA62869A8EE004E2C05 /* RecipesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C07BBA52869A8EE004E2C05 /* RecipesRequest.swift */; };
+		1C07BBA82869A9D2004E2C05 /* RecipesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C07BBA72869A9D2004E2C05 /* RecipesResponse.swift */; };
+		1C07BBAA2869AA36004E2C05 /* RecipesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C07BBA92869AA36004E2C05 /* RecipesService.swift */; };
+		1C07BBAD2869AAAE004E2C05 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C07BBAC2869AAAE004E2C05 /* Recipe.swift */; };
+		1C07BBAF2869AAC7004E2C05 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C07BBAE2869AAC7004E2C05 /* Ingredient.swift */; };
 		1CC578692867315100AD51BB /* network_layerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC578682867315100AD51BB /* network_layerApp.swift */; };
 		1CC5786B2867315100AD51BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC5786A2867315100AD51BB /* ContentView.swift */; };
 		1CC5786D2867315200AD51BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CC5786C2867315200AD51BB /* Assets.xcassets */; };
@@ -18,6 +23,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C07BBA52869A8EE004E2C05 /* RecipesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesRequest.swift; sourceTree = "<group>"; };
+		1C07BBA72869A9D2004E2C05 /* RecipesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesResponse.swift; sourceTree = "<group>"; };
+		1C07BBA92869AA36004E2C05 /* RecipesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesService.swift; sourceTree = "<group>"; };
+		1C07BBAC2869AAAE004E2C05 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		1C07BBAE2869AAC7004E2C05 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		1CC578652867315100AD51BB /* network-layer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "network-layer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CC578682867315100AD51BB /* network_layerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = network_layerApp.swift; sourceTree = "<group>"; };
 		1CC5786A2867315100AD51BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,6 +50,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C07BBAB2869AA97004E2C05 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1C07BBAC2869AAAE004E2C05 /* Recipe.swift */,
+				1C07BBAE2869AAC7004E2C05 /* Ingredient.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		1CC5785C2867315100AD51BB = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +78,7 @@
 		1CC578672867315100AD51BB /* network-layer */ = {
 			isa = PBXGroup;
 			children = (
+				1C07BBAB2869AA97004E2C05 /* Model */,
 				1CC578762867391A00AD51BB /* Network */,
 				1CC578682867315100AD51BB /* network_layerApp.swift */,
 				1CC5786A2867315100AD51BB /* ContentView.swift */,
@@ -98,6 +118,9 @@
 		1CC5788228674F7600AD51BB /* Public Endpoint */ = {
 			isa = PBXGroup;
 			children = (
+				1C07BBA52869A8EE004E2C05 /* RecipesRequest.swift */,
+				1C07BBA72869A9D2004E2C05 /* RecipesResponse.swift */,
+				1C07BBA92869AA36004E2C05 /* RecipesService.swift */,
 			);
 			path = "Public Endpoint";
 			sourceTree = "<group>";
@@ -181,7 +204,12 @@
 				1CC5787F28673A6B00AD51BB /* Encodable+extensions.swift in Sources */,
 				1CC5786B2867315100AD51BB /* ContentView.swift in Sources */,
 				1CC578692867315100AD51BB /* network_layerApp.swift in Sources */,
+				1C07BBAA2869AA36004E2C05 /* RecipesService.swift in Sources */,
 				1CC5787D28673A4B00AD51BB /* BaseURLRequest.swift in Sources */,
+				1C07BBA62869A8EE004E2C05 /* RecipesRequest.swift in Sources */,
+				1C07BBAD2869AAAE004E2C05 /* Recipe.swift in Sources */,
+				1C07BBA82869A9D2004E2C05 /* RecipesResponse.swift in Sources */,
+				1C07BBAF2869AAC7004E2C05 /* Ingredient.swift in Sources */,
 				1CC5787B28673A0900AD51BB /* BaseService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
