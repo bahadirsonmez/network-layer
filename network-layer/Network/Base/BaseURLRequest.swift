@@ -17,9 +17,9 @@ class BaseURLRequest: URLRequestConvertible {
         var endpointPath: String {
             switch self {
             case .privateType:
-                return "/private"
+                return "private/"
             case .publicType:
-                return "/public"
+                return "public/"
             }
         }
         
@@ -28,7 +28,7 @@ class BaseURLRequest: URLRequestConvertible {
         }
     }
     
-    private let baseURL: String = ""
+    private let baseURL: String = "https://cefis-great-cooking-website.not-a-real-url.srsly/"
     var endpointType: EndpointType = .publicType
     var path: String = ""
     var method: HTTPMethod = .get
