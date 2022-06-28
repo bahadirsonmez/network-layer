@@ -21,4 +21,12 @@ class StockService: BaseService {
         self.performRequest(request: request, completion: completion)
     }
     
+    func updateStockById(request: UpdateStockByIdRequest, completion: @escaping (Result<Ingredient, AFError>) -> Void) {
+        self.performRequest(request: request, completion: completion)
+    }
+    
+    func deleteStockById(request: DeleteStockByIdRequest, completion: @escaping (Result<Ingredient, AFError>) -> Void) {
+        self.performRequest(request: request, completion: completion)
+    }
+    
 }

@@ -18,6 +18,7 @@
 		1C07BBBC286B5463004E2C05 /* GetStockByIdRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C07BBBB286B5463004E2C05 /* GetStockByIdRequest.swift */; };
 		1C12E550286B5D1B00D8C6F2 /* CreateStockRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C12E54F286B5D1B00D8C6F2 /* CreateStockRequest.swift */; };
 		1C12E552286B5DCB00D8C6F2 /* UpdateStockByIdRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C12E551286B5DCB00D8C6F2 /* UpdateStockByIdRequest.swift */; };
+		1C12E554286B5EC400D8C6F2 /* DeleteStockByIdRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C12E553286B5EC400D8C6F2 /* DeleteStockByIdRequest.swift */; };
 		1CC578692867315100AD51BB /* network_layerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC578682867315100AD51BB /* network_layerApp.swift */; };
 		1CC5786B2867315100AD51BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC5786A2867315100AD51BB /* ContentView.swift */; };
 		1CC5786D2867315200AD51BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CC5786C2867315200AD51BB /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		1C07BBBB286B5463004E2C05 /* GetStockByIdRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStockByIdRequest.swift; sourceTree = "<group>"; };
 		1C12E54F286B5D1B00D8C6F2 /* CreateStockRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStockRequest.swift; sourceTree = "<group>"; };
 		1C12E551286B5DCB00D8C6F2 /* UpdateStockByIdRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateStockByIdRequest.swift; sourceTree = "<group>"; };
+		1C12E553286B5EC400D8C6F2 /* DeleteStockByIdRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteStockByIdRequest.swift; sourceTree = "<group>"; };
 		1CC578652867315100AD51BB /* network-layer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "network-layer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CC578682867315100AD51BB /* network_layerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = network_layerApp.swift; sourceTree = "<group>"; };
 		1CC5786A2867315100AD51BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				1C07BBBB286B5463004E2C05 /* GetStockByIdRequest.swift */,
 				1C12E54F286B5D1B00D8C6F2 /* CreateStockRequest.swift */,
 				1C12E551286B5DCB00D8C6F2 /* UpdateStockByIdRequest.swift */,
+				1C12E553286B5EC400D8C6F2 /* DeleteStockByIdRequest.swift */,
 			);
 			path = "Private Endpoint";
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				1C12E550286B5D1B00D8C6F2 /* CreateStockRequest.swift in Sources */,
 				1C07BBB22869D8EC004E2C05 /* PublicURLRequest.swift in Sources */,
 				1C07BBAA2869AA36004E2C05 /* RecipesService.swift in Sources */,
+				1C12E554286B5EC400D8C6F2 /* DeleteStockByIdRequest.swift in Sources */,
 				1C07BBB42869D9AD004E2C05 /* PrivateURLRequest.swift in Sources */,
 				1CC5787D28673A4B00AD51BB /* BaseURLRequest.swift in Sources */,
 				1C07BBA62869A8EE004E2C05 /* GetAllRecipesRequest.swift in Sources */,
