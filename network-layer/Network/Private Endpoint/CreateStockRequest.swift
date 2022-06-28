@@ -7,8 +7,6 @@
 
 import Foundation
 
-// MARK: - Request
-
 final class CreateStockRequest: PrivateURLRequest {
     init(with ingredient: Ingredient) {
         super.init()

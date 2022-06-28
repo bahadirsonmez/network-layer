@@ -7,8 +7,6 @@
 
 import Foundation
 
-// MARK: - Request
-
 final class GetAllRecipesRequest: PublicURLRequest {
     override init() {
         super.init()

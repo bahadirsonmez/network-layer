@@ -7,10 +7,8 @@
 
 import Foundation
 
-// MARK: - Request
-
 final class GetStockByIdRequest: PrivateURLRequest {
-    init(with id: String) {
+    init(by id: String) {
         super.init()
         self.path = "stock/\(id)"
     }

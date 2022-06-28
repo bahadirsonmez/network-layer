@@ -7,8 +7,6 @@
 
 import Foundation
 
-// MARK: - Request
-
 final class GetAllStocksRequest: PrivateURLRequest {
     override init() {
         super.init()
