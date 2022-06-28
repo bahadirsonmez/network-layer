@@ -16,4 +16,9 @@ class StockService: BaseService {
     func getStockById(request: GetStockByIdRequest, completion: @escaping (Result<Ingredient, AFError>) -> Void) {
         self.performRequest(request: request, completion: completion)
     }
+    
+    func createNewStock(request: CreateStockRequest, completion: @escaping (Result<Ingredient, AFError>) -> Void) {
+        self.performRequest(request: request, completion: completion)
+    }
+    
 }
