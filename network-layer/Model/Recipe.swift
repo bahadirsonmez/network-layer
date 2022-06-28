@@ -10,5 +10,5 @@ import Foundation
 struct Recipe: Codable {
     let id, name: String?
     let price: Int?
-    let ingredients: [[String:Int]]?
+    let ingredients: [String:Int]?
 }
