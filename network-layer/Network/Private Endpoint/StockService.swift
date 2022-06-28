@@ -9,8 +9,11 @@ import Alamofire
 
 class StockService: BaseService {
     
-    func getAllStocks(request: GetAllStocksRequest, completion: @escaping (Result<StockResponse, AFError>) -> Void) {
+    func getAllStocks(request: GetAllStocksRequest, completion: @escaping (Result<[Ingredient], AFError>) -> Void) {
         self.performRequest(request: request, completion: completion)
     }
     
+    func getStockById(request: GetStockByIdRequest, completion: @escaping (Result<Ingredient, AFError>) -> Void) {
+        self.performRequest(request: request, completion: completion)
+    }
 }

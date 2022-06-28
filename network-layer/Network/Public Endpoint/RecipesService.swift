@@ -9,7 +9,7 @@ import Alamofire
 
 class RecipesService: BaseService {
     
-    func getAllRecipes(request: GetAllRecipesRequest, completion: @escaping (Result<RecipesResponse, AFError>) -> Void) {
+    func getAllRecipes(request: GetAllRecipesRequest, completion: @escaping (Result<[Recipe], AFError>) -> Void) {
         self.performRequest(request: request, completion: completion)
     }
     
