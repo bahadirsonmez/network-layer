@@ -9,25 +9,6 @@ import Alamofire
 import Foundation
 
 class BaseURLRequest: URLRequestConvertible {
-    
-    enum EndpointType {
-        case privateType
-        case publicType
-        
-        var endpointPath: String {
-            switch self {
-            case .privateType:
-                return "private/"
-            case .publicType:
-                return "public/"
-            }
-        }
-        
-        var isPrivate: Bool {
-            self == .privateType
-        }
-    }
-    
     private let baseURL: String = "https://cefis-great-cooking-website.not-a-real-url.srsly/"
     var endpointType: EndpointType = .publicType
     var path: String = ""
