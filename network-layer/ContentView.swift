@@ -19,7 +19,15 @@ struct ContentView: View {
             } label: {
                 Text("Hit me!")
             }
-            .alert(alertText, isPresented: $showAlert, actions: { })
+            .alert(isPresented: $showAlert) {
+                Alert(
+                    title: Text("Alert"),
+                    message: Text(alertText),
+                    dismissButton: .cancel(Text("OK"), action: {
+                        self.alertText = ""
+                    })
+                )
+            }
         }.onAppear {
             let request = GetAllRecipesRequest()
             RecipesService().getAllRecipes(request: request) { result in
